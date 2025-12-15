@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascripts</title>
+</head>
+<body>
+
+	<h2>Question 1 :Change Content</h2>
+
+	<p id="qatt">Welcome to my page</p>
+
+	<button type="button" onclick='document.getElementById("qatt").innerHTML="I love to learn web design"'>Click Here</button>
+
+	<h2>Question 2: Change Style</h2>
+	<p id="IM">Hello! Welcome to Faculty of Information Management</p>
+
+	<script>
+		function myStyle()
+		{
+			document.getElementById("IM").style.fontSize="25px";
+			document.getElementById("IM").style.color="blue";
+			document.getElementById("IM").style.fontFamily="Courier New";
+			document.getElementById("IM").style.backgroundColor="yellow"
+		}
+	</script>
+
+	<button type="button" onclick="myStyle()">TEKAN SAYA</button>
+
+	<h2>Question 3: Image Manipulation</h2>
+
+	<script>
+		function myImage(a)
+		{
+			var	pict;
+			if (a==1)
+			{
+				pict="image/apple.jpg"
+			}
+			else 
+			{
+				pict="image/bitten.jpg"
+			}
+			document.getElementById('bite').src=pict;
+		}
+
+	</script>
+
+	<img src="image/apple.jpg" width="300" height="250" id="bite">
+	<p>
+		<button type="button" onclick="myImage(1)">Apple</button>
+		<button type="button" onclick="myImage(2)">Bitten Apple</button>
+	</p>
+
+	<script>
+		{
+			alert("Assalamualaikum\nSelamat datang ke kelas IMS456\nSemoga kita beroleh ilmu bermanfaat")
+		}
+	</script>
+
+	<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7967.529675158084!2d101.71401304999999!3d3.15659345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d1676c29fd%3A0xa4390cc23436018!2sKuala%20Lumpur%20City%20Centre%2C%2050450%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1765395622552!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+</body>
+</html>
